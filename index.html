@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Lazy Load Video & Scripts</title>
+  <meta name="description" content="Lazy Load YouTube Video & Scripts">
+  <meta name="author" content="SimpleSaint • Michelle Weaver">
+
+  <meta property="og:title" content="Lazy Load Video & Scripts">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://simplesaint.com">
+  <meta property="og:description" content="Lazy Load YouTube Video & Scripts">
+  <meta property="og:image" content="video.png">
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <header id="site_header">
+    <h1>Lazy Load YouTube Video & Scripts</h1>
+  </header>
+  <main id="main_content">
+		<section class="intro">The purpose of this pen is to lazy load a video when the user clicks or scrolls the on the video thumbnail. It's like pie, simple, and sweet, but with the secret ingredient: <span class="code">mute=1</span>.<hr /></section>
+    <section>
+        <p> What I have found is in order for the autoplay to work consistently, one needs to add the <span class="code">mute=1</span> url parameter in addition to <span class="code">autoplay=1</span>. This is the most consistent way to allow a video to autoplay, as there are rules and permissions around autoplay in <a href="https://developer.chrome.com/blog/autoplay/" target="_blank">chrome</a> and other browsers.</p>
+    </section>
+    <section>
+		<h2>Play on Click</h2>
+        <div class="video-container">
+            <div class="video-overlay"></div>
+            <iframe 
+                class="lazy-video-click"
+                width="560" 
+                height="315"
+                data-src="https://www.youtube.com/embed/EngW7tLk6R8?autoplay=1&mute=1" 
+                title="YouTube video player" 
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 		
+                allowfullscreen
+                style="background-image: url('https://res.cloudinary.com/simplesaint/image/upload/q_auto,f_auto/code-samples/video-bg_uobjmq.webp');">
+            </iframe>
+        </div>
+    </section>
+    <section>
+        Mauris lobortis orci augue, ac bibendum quam suscipit at. Nam commodo molestie nunc nec ultricies. Sed tristique nisi ut mattis dapibus. Aenean mollis augue eget sem tincidunt, in bibendum tellus laoreet. Donec id est eget turpis vulputate feugiat. Nunc tincidunt magna turpis, at sollicitudin purus ultrices eget. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec lacinia lectus tortor, in feugiat ex feugiat et. Sed ac eleifend felis, et iaculis purus.
+    </section>
+		<section>
+		<h2>Play on Scroll</h2>
+        <iframe 
+        class="lazy-video-scroll"
+        width="560" 
+        height="315" 
+        data-src="https://www.youtube.com/embed/wjQq0nSGS28?autoplay=1&mute=1" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+        style="background-image: url('https://res.cloudinary.com/simplesaint/image/upload/q_auto,f_auto/code-samples/video-bg-2_ckzftd.png');"
+								></iframe></section>
+    <section>
+        Integer eu ex quis nisl gravida dapibus pretium sit amet turpis. Vivamus id nisl sed dui ultricies lobortis sed in felis. Cras ullamcorper tellus in risus convallis imperdiet. Nulla interdum libero vel malesuada finibus. Mauris auctor non ligula euismod lacinia. Nulla rutrum nisl ac finibus rhoncus. Nam nec placerat mauris. Mauris dignissim tortor magna, vitae fermentum arcu euismod non. Integer ligula lorem, aliquet id iaculis non, scelerisque ut erat. Proin ut diam auctor, efficitur metus fermentum, tristique est. Nullam egestas tempus tempor. Donec est nulla, maximus non quam vel, aliquam viverra mi. Vivamus non pellentesque erat. Proin porttitor, orci vel rhoncus sagittis, justo urna vehicula justo, ut semper arcu libero eu ligula. Proin pellentesque orci ultrices, malesuada nunc a, posuere arcu. Sed accumsan ligula sed massa elementum, et lacinia lectus eleifend.
+    </section>
+  </main>
+	<footer id="site_footer">
+		Well that was fun now wasn't it :) 
+	</footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
