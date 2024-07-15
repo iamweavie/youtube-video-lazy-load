@@ -1,0 +1,110 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background-color: whitesmoke;
+	border: 0;
+	font-size: 16px;
+	line-height: 1.7;
+	color: #555;
+}
+
+header {
+	padding: 5px;
+	background-color: crimson;
+	color: white;
+	text-align: center;
+	position: sticky;
+	top: 0;
+	z-index: 9999;
+}
+
+h1 {
+	font-size: 24px;
+	font-weight: 300;
+}
+
+h2 {
+    font-size: 24px;
+    text-align: center;
+		color: black;
+	  font-weight: 300;
+}
+
+#main_content {
+	background-color: whitesmoke;
+	z-index: 0;
+	margin-bottom: 75px;
+	padding: 30px 15px;
+}
+
+section {
+	margin: 30px auto;
+	width: 100%;
+	max-width: 560px;
+}
+
+.intro {
+	font-size: 20px;
+	text-align: center;
+	color: black;
+}
+
+hr {
+	border: none;
+	background-color: slategray;
+	height: 4px;
+	margin: 30px auto;
+	width: 25%;
+}
+
+[class*=".lazy-video"] {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.video-container:hover {
+    cursor: pointer;
+}
+
+.video-container {
+    position: relative;
+}
+
+.video-container .video-overlay {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+}
+
+#site_footer {
+	padding: 25px;
+	background-color: #222;
+	color: white;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: -1;
+}
+
+span.code {
+	background-color: rgba(0,0,0,.07);
+	padding: 2px 7px 3px;
+	border-radius: 3px;
+	color: crimson;
+}
+
+a {
+	transition: all .15s linear;
+	color: crimson;
+	text-decoration: none;
+	border-bottom: 1px solid crimson;
+	padding-bottom: 1px;
+	
+	&:hover {
+		color: red;
+		border-color: red;
+	}
+}
